@@ -1,0 +1,2 @@
+package JavaForPythonDev2;
+enum Major { COMPUTERSCIENCE, BUSINESS, PSYCHOLOGY, COMMUNICATIONS };
