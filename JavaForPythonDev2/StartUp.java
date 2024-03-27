@@ -1,5 +1,7 @@
 package JavaForPythonDev2;
 
+import java.time.LocalDate;
+
 //import java.util.Scanner;
 
 public class StartUp {
@@ -7,9 +9,19 @@ public class StartUp {
     public static void main(String[] args) {
         Student student = new Student();
         student.major = Major.COMPUTERSCIENCE;
-
+        student.name = "Denim";
+        student.dateOfBirth = LocalDate.of(2019, 12, 19);
+        System.out.println(student);
+        System.out.println(student.getAge());
+        
         Student student2 = new Student();
         student2.major = Major.PSYCHOLOGY;
+        student2.name = "Dennis";
+        student2.dateOfBirth = LocalDate.of(2020, 5, 12);
+        System.out.println(student2.toString("Amari"));
+        System.out.println(student2.getAge());
+        
+
 
         if(student.major == Major.COMPUTERSCIENCE) {
             System.out.println("Computers are the best");
